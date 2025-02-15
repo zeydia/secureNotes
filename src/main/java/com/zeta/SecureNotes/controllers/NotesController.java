@@ -1,10 +1,9 @@
-package com.zeta.EmbarkxTuto.controllers;
+package com.zeta.SecureNotes.controllers;
 
-import com.zeta.EmbarkxTuto.models.Note;
-import com.zeta.EmbarkxTuto.services.NoteService;
+import com.zeta.SecureNotes.models.Note;
+import com.zeta.SecureNotes.services.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 

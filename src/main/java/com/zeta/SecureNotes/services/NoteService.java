@@ -1,10 +1,6 @@
-package com.zeta.EmbarkxTuto.services;
+package com.zeta.SecureNotes.services;
 
-import com.zeta.EmbarkxTuto.models.Note;
-import com.zeta.EmbarkxTuto.repositories.NoteRepository;
-import lombok.Setter;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.zeta.SecureNotes.models.Note;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.zeta.EmbarkxTuto.repositories;
+package com.zeta.SecureNotes.repositories;
 
-import com.zeta.EmbarkxTuto.models.Note;
+import com.zeta.SecureNotes.models.Note;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

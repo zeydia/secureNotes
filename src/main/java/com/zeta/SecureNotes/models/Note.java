@@ -1,4 +1,4 @@
-package com.zeta.EmbarkxTuto.models;
+package com.zeta.SecureNotes.models;
 
 import jakarta.persistence.*;
 import lombok.Data;

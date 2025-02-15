@@ -1,4 +1,4 @@
-package com.zeta.EmbarkxTuto.controllers;
+package com.zeta.SecureNotes.controllers;
 
 import org.springframework.web.bind.annotation.*;
 
