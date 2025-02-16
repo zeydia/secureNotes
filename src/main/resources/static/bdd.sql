@@ -1,17 +1,12 @@
 use securenotes;
 
-create table users (
-    username varchar(50) not null primary key,
-    password varchar(100) not null,
-    enabled boolean not null
-);
-# drop table users;
+INSERT INTO roles(role_name) values('ROLE_USER');
+INSERT INTO roles(role_name) values('ROLE_ADMIN');
 
-create table authorities (
-    authority varchar(50),
-    username varchar(50),
-    constraint fk_authority_user foreign key (username) references users(username)
-);
-# drop table authorities;
+INSERT INTO users(username, email, password, role_id)
+    values('user1','user1@email.com','passeruser1',1);
+INSERT INTO users(username, email, password, role_id)
+    values('admin1','admin1@email.com','passeradmin1',2);
 
-create unique index ix_auth_user on authorities(username,authority);
+SELECT * from roles;
+SELECT * from users;

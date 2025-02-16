@@ -16,6 +16,7 @@ import java.util.Objects;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Data
 @Table(
         name = "users",
@@ -36,7 +37,7 @@ public class User {
     @Column(name = "username")
     private String username;
 
-    @NotBlank
+
     @Size(max = 50)
     @Email
     @Column(name = "email")
@@ -68,7 +69,7 @@ public class User {
 
     @CreationTimestamp
     @Column(updatable = false)
-    private LocalDateTime createdDate;
+    private LocalDateTime createdDate = LocalDateTime.now();
 
     @UpdateTimestamp
     private LocalDateTime updatedDate;
@@ -79,9 +80,9 @@ public class User {
         this.password = password;
     }
 
-    public User(String username, String email) {
+    public User(String username, String password) {
         this.username = username;
-        this.email = email;
+        this.password = password;
     }
 
     @Override
